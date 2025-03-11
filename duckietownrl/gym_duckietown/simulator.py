@@ -398,10 +398,10 @@ class Simulator(gym.Env):
         :param enable_leds: Enables LEDs drawing.
         """
         list_checkpts = [
-            CheckPoint((0.8, 0, 0.43), (1, 0, 0.13)),
-            CheckPoint((0.43, 0, 1.0), (0.13, 0, 0.8)),
-            CheckPoint((0.75, 0, 1.3), (0.55, 0, 1.6)),
-            CheckPoint((1.3, 0, 0.8), (1.6, 0, 1.0)),
+            CheckPoint((0.8, 0, 0.5), (1, 0, 0.0)),#0.2inx 0.5inz
+            CheckPoint((0.5, 0, 1.0), (0.0, 0, 0.8)),#0.5inx 0.2inz
+            CheckPoint((0.75, 0, 1.2), (0.55, 0, 1.7)),#0.2inx 0.5inz
+            CheckPoint((1.2, 0, 0.8), (1.7, 0, 1.0)),#0.5inx 0.2inz
         ]
         self.race = Race(list_checkpts)
         self.reward_invalid_pose = reward_invalid_pose

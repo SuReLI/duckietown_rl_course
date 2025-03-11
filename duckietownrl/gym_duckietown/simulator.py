@@ -1826,7 +1826,7 @@ class Simulator(gym.Env):
         self.cur_pos, self.cur_angle = _update_pos(self, action)
 
         self.race.update_counter(self.cur_pos)
-        print(f"N.checkpoints: {self.race.counter_checkpt}")
+        #print(f"N.checkpoints: {self.race.counter_checkpt}")
         self.step_count += 1
         self.timestamp += delta_time
 
@@ -2750,7 +2750,7 @@ def _update_pos(self, action):
     q = self.state.TSE2_from_state()[0]
     pos, angle = self.weird_from_cartesian(q)
     pos = np.asarray(pos)
-    print(pos, angle)
+    #print(pos, angle)
     return pos, angle
 
 
